@@ -41,8 +41,9 @@ int main(int argc, char *argv[]) {
   _ppm_to_floatp(image, &image_buffer);
 
   //print results
-  for(int i = 0; i < image.width * image.height * 3)
-    printf("%f", image_buffer[i]);
+  for(int i = 0; i < image.width * image.height * 3; i++)
+    printf("%f ", image_buffer[i]);
+  printf("\n");
 
   return 0;
 }
